@@ -6,5 +6,20 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	alert("ok");
+	let sueldo;
+	let nsueldo; 
+	let aumento; 
+              //sueldo es flotante al utilizar parseFloat
+	sueldo = parseFloat (document.getElementById("txtIdSueldo").value);
+
+	aumento = sueldo*10/100; 
+
+	nsueldo= sueldo + aumento;
+
+	document.getElementById("txtIdResultado").value =nsueldo.toFixed(2); 
+
+	//la funsion toFixed es para redondear a determinada cantidad de decimales 
+
+
+
 }
